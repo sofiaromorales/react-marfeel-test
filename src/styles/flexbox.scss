@@ -1,0 +1,99 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.space-around {
+        justify-content: space-around
+    }
+}
+
+.block {
+    display: block;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+@mixin col-class($flex-size) {
+    .col-#{$flex-size} {
+        flex-grow: #{$flex-size};
+    }
+}
+
+@mixin height-class($flex-size) {
+    .h-#{$flex-size} {
+        height: #{$flex-size}#{'%'};
+    }
+}
+
+@mixin margin-class($side, $number) {
+    $firstLetter: str-slice($side, 0, 1);
+    .m#{$firstLetter}-#{$number} {
+        margin-#{$side}: #{$number}px;
+    }
+}
+
+@mixin margin($number) {
+    .m-#{$number} {
+        margin: #{$number}px;
+    }
+}
+
+@mixin padding($number) {
+    .p-#{$number} {
+        padding: #{$number}px;
+    }
+}
+
+@mixin padding-class($side, $number) {
+    $firstLetter: str-slice($side, 0, 1);
+    .p#{$firstLetter}-#{$number} {
+        padding-#{$side}: #{$number}px;
+    }
+}
+
+@mixin width-class($flex-size) {
+    .w-#{$flex-size} {
+        width: #{$flex-size}#{'%'};
+    }
+}
+
+@mixin generate-cols() {
+   @each $flex-size in $flex-sizes {
+        @include col-class($flex-size);
+   }
+}
+
+@mixin generate-box() {
+    @each $margin in $margins {
+        @each $side in $sides {
+            @include margin-class($side, $margin);
+            @include padding-class($side, $margin);
+        }
+    }
+}
+
+@mixin generate-margin() {
+    @each $margin in $margins {
+        @include margin($margin);
+        @include padding($margin);
+    }
+}
+
+@mixin generate-width-height() {
+    @each $percentage in $percentages {
+        @include width-class($percentage);
+        @include height-class($percentage);
+    }
+}
+
+
+@include generate-box();
+@include generate-cols();
+@include generate-margin();
+@include generate-width-height();

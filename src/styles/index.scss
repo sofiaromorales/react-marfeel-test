@@ -1,12 +1,21 @@
-body {
-
-}
-
 // Globals
+@import './colors.scss';
 @import './flex.scss';
+@import './flexbox.scss';
 @import './sizes.scss';
 
 //Pages
 @import './App.scss';
 
 //Components
+@import './HamburgerMenuIcon.scss';
+@import './Header.scss';
+@import './SectionMenu';
+
+body {
+    margin: $none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

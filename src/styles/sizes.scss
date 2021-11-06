@@ -1,4 +1,14 @@
+$none: 0px;
+$extra-small: 5px;
+$small: 10px;
+$medium-small: 25px;
+$medium: 50px;
+$large: 150px;
 
 :export {
-
+    none: $none;
+    extra-small: $extra-small;
+    small: $small;
+    medium: $medium;
+    large: $large;
 }

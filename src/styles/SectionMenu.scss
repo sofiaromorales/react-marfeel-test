@@ -1,0 +1,26 @@
+.SectionMenu {
+    .selected-section {
+        background: $dark-orange;
+        height: $extra-small;
+    }
+    .section-container  {
+        min-width: $large;
+        min-height: $small
+    }
+    .sections {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+    }
+
+}
+
+@media screen and (min-width: $sm) {
+    .SectionMenu {
+
+    }
+}

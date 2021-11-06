@@ -1,0 +1,16 @@
+.HamburgerMenuIcon {
+    .bar {
+        height: $extra-small;
+        width: 35px;
+        background: $dark-orange;
+        border-radius: $extra-small;
+    }
+}
+
+@media screen and (min-width: $sm) {
+    .HamburgerMenuIcon {
+        .bar {
+            width: $medium;
+        }
+    }
+}
