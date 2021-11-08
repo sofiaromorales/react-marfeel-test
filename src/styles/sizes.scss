@@ -3,6 +3,7 @@ $extra-small: 5px;
 $small: 10px;
 $medium-small: 25px;
 $medium: 50px;
+$large-medium: 90px;
 $large: 150px;
 
 :export {
@@ -10,5 +11,6 @@ $large: 150px;
     extra-small: $extra-small;
     small: $small;
     medium: $medium;
+    large-medium: $large-medium;
     large: $large;
 }

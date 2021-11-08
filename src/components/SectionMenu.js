@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react'
 import Section from './Section'
 
 const SectionMenu = (props) => {
+    const {
+        hide
+    } = props
 
     const [selectedSection, setSelectedSection] = useState(0)
 
@@ -12,6 +15,8 @@ const SectionMenu = (props) => {
         } = params
         setSelectedSection(sectionIndex)
     }
+
+
 
     const sections = [
         {
@@ -35,14 +40,14 @@ const SectionMenu = (props) => {
         return sections.map((s, i) => {
             return (
                 <div
-                    className='section-container col-1'
+                    className='section-container col-1 mt-auto'
                     onClick={() => changeSection({sectionIndex: i})}
                 >
                     <Section
                         sectionTitle={s.title}
                     />
                     <div
-                        className={`w-100 h-20 ${i === selectedSection ? 'selected-section' : ''}`}
+                        className={`w-100 section ${i === selectedSection ? 'selected' : ''}`}
                     >
                     </div>
                 </div>
@@ -53,8 +58,8 @@ const SectionMenu = (props) => {
 
 
     return (
-        <div className='SectionMenu mt-20'>
-            <div className='sections row'>
+        <div className='SectionMenu h-100'>
+            <div className='sections row h-100'>
                 {renderSections()}
             </div>
         </div>

@@ -1,11 +1,14 @@
 .SectionMenu {
-    .selected-section {
-        background: $dark-orange;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 24px 24px -2px;
+    .section {
         height: $extra-small;
+        &.selected {
+            background: $dark-orange;
+        }
     }
     .section-container  {
         min-width: $large;
-        min-height: $small
+        height: auto;
     }
     .sections {
         flex-wrap: nowrap;

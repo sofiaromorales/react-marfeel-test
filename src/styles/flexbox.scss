@@ -1,6 +1,8 @@
 .row {
     display: flex;
     flex-flow: row wrap;
+    position:relative;
+    overflow: hidden;
 
     &.center {
         justify-content: center;
@@ -19,9 +21,15 @@
     margin: 0 auto;
 }
 
+.mt-auto {
+    margin-top: auto;
+}
+
 @mixin col-class($flex-size) {
     .col-#{$flex-size} {
         flex-grow: #{$flex-size};
+        flex-basis: min-content;
+        height: 100%;
     }
 }
 

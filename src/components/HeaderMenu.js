@@ -5,7 +5,7 @@ import HamburgerMenuIcon from './HamburgerMenuIcon'
 const HeaderMenu = (props) => {
     return (
         <div className='HeaderMenu'>
-            <div className='row space-around mt-10 mb-30'>
+            <div className='row space-around mt-20 pb-20'>
                 <div className='hamburger-menu-container pl-20'>
                     <HamburgerMenuIcon/>
                 </div>

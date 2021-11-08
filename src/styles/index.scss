@@ -8,12 +8,17 @@
 @import './App.scss';
 
 //Components
+@import './Article.scss';
+@import './Articles.scss';
+@import './FloatingHamburgerMenu.scss';
 @import './HamburgerMenuIcon.scss';
 @import './Header.scss';
+@import './HeaderMenu.scss';
 @import './SectionMenu';
 
 body {
     margin: $none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ::-webkit-scrollbar {

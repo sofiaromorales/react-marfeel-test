@@ -1,10 +1,17 @@
+$dark-grey: #585858;
 $dark-orange: #e45e65;
+$grey: grey;
+$light-grey: #D0D0D0;
 $plain-white: white;
 $plain-black: black;
 
 
+
 :export {
     dark-orange: $dark-orange;
+    grey: $grey;
+    light-grey: $light-grey;
     plain-white: $plain-white;
     plain-black: $plain-black;
+    dark-grey: $dark-grey
 }

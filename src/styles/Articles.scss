@@ -1,0 +1,13 @@
+.Articles {
+    .divider {
+        background: $light-grey;
+        height: 1px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $sm) {
+    .Articles {
+
+    }
+}
