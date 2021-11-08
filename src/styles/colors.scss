@@ -1,18 +1,11 @@
+$dark-blue: #151e24;
 $dark-grey: #585858;
 $dark-orange: #e45e65;
 $grey: grey;
 $light-grey: #D0D0D0;
 $plain-white: white;
 $plain-black: black;
-
-
-// @mixin colour-class($colour) {
-//     .bg-#{$colour} {
-//         background: #{$colour};
-//     }
-// }
-//
-// @include colour-class();
+$transparent-black: rgba(0, 0, 0, 0.5);
 
 :export {
     dark-orange: $dark-orange;

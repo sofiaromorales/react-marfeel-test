@@ -5,11 +5,15 @@ import HamburgerMenuIcon from './HamburgerMenuIcon'
 const FloatingHamburgerMenu = (props) => {
 
     const {
-        burgerMenu={}
+        burgerMenu={},
+        openMenu
     } = props
 
     return (
-        <div className='FloatingHamburgerMenu'>
+        <div
+            className='FloatingHamburgerMenu'
+            onClick={() => openMenu(true)}
+        >
             <HamburgerMenuIcon
                 burgerMenu={burgerMenu}
             />

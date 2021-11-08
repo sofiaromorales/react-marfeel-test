@@ -10,8 +10,8 @@ const Section = (props) => {
         <div className='Section'>
             <div className='row mb-5'>
                 <p
-                className='m-auto'
-                style={{fontSize: sectionMenu.textSize}}
+                    className='m-auto'
+                    style={{fontSize: sectionMenu.textSize}}
                 >
                     {`${sectionTitle.toUpperCase()}`}
                 </p>

@@ -6,14 +6,20 @@ const HeaderMenu = (props) => {
 
     const {
         burgerMenu = {},
-        logo
+        logo,
+        openMenu
     } = props
 
     return (
         <div className='HeaderMenu'>
             <div className='row space-around mt-20 pb-20'>
-                <div className='hamburger-menu-container pl-20'>
-                    <HamburgerMenuIcon burgerMenu={burgerMenu}/>
+                <div
+                    className='hamburger-menu-container pl-20'
+                    onClick={() => openMenu(true)}
+                >
+                    <HamburgerMenuIcon
+                        burgerMenu={burgerMenu}
+                    />
                 </div>
                 <div className='logo-container col-9'>
                     <img
