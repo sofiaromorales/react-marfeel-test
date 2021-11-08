@@ -6,6 +6,13 @@ $plain-white: white;
 $plain-black: black;
 
 
+// @mixin colour-class($colour) {
+//     .bg-#{$colour} {
+//         background: #{$colour};
+//     }
+// }
+//
+// @include colour-class();
 
 :export {
     dark-orange: $dark-orange;

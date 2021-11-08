@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react'
+import useFetch from 'react-fetch-hook'
 
 import Section from './Section'
 
 const SectionMenu = (props) => {
     const {
-        hide
+        hide,
+        sectionMenu = {}
     } = props
 
     const [selectedSection, setSelectedSection] = useState(0)
+    const [sections, setSections] = useState([])
 
     const changeSection = (params) => {
         const {
@@ -16,25 +19,20 @@ const SectionMenu = (props) => {
         setSelectedSection(sectionIndex)
     }
 
+    const {
+        data,
+        error
+    } = useFetch('http://localhost:3001/api/mocks/sections')
 
+    if (error) {
+        console.log(error);
+    }
 
-    const sections = [
-        {
-            title: 'Section 1'
-        },
-        {
-            title: 'Section 2'
-        },
-        {
-            title: 'Section 3'
-        },
-        {
-            title: 'Section 4'
-        },
-        {
-            title: 'Section 5'
+    useEffect(() => {
+        if (data) {
+            setSections(data)
         }
-    ]
+    }, [data])
 
     const renderSections = () => {
         return sections.map((s, i) => {
@@ -45,9 +43,11 @@ const SectionMenu = (props) => {
                 >
                     <Section
                         sectionTitle={s.title}
+                        sectionMenu={sectionMenu}
                     />
                     <div
                         className={`w-100 section ${i === selectedSection ? 'selected' : ''}`}
+                        style={{background: i === selectedSection ? sectionMenu.colour : ''}}
                     >
                     </div>
                 </div>

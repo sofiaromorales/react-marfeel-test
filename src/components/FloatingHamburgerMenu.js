@@ -3,9 +3,16 @@ import React from 'react'
 import HamburgerMenuIcon from './HamburgerMenuIcon'
 
 const FloatingHamburgerMenu = (props) => {
+
+    const {
+        burgerMenu={}
+    } = props
+
     return (
         <div className='FloatingHamburgerMenu'>
-            <HamburgerMenuIcon/>
+            <HamburgerMenuIcon
+                burgerMenu={burgerMenu}
+            />
         </div>
     )
 

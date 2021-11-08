@@ -1,7 +1,7 @@
 .HamburgerMenuIcon {
     .bar {
         height: $extra-small;
-        width: 35px;
+        width: $medium-small;
         background: $dark-orange;
         border-radius: $extra-small;
     }
@@ -9,8 +9,5 @@
 
 @media screen and (min-width: $md) {
     .HamburgerMenuIcon {
-        .bar {
-            width: $medium;
-        }
     }
 }

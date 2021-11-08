@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Articles from './components/Articles'
-import FloatingHamburgerMenu from './components/FloatingHamburgerMenu'
 import Header from './components/Header'
 
 class App extends React.Component {
@@ -34,11 +33,6 @@ class App extends React.Component {
                     <Header/>
                 </div>
                 <Articles/>
-                {this.state.hideHeader &&
-                    <FloatingHamburgerMenu/>
-                }
-                <div className='Feed' style={{height: '10000px'}}>
-                </div>
             </div>
         )
     }
