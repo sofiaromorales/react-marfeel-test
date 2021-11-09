@@ -1,5 +1,9 @@
 .Article {
-    height: 300px;;
+    height: 300px;
+    flex-wrap: nowrap;
+    .col-6 {
+        width: 100%;
+    }
     p {
         text-overflow: ellipsis;
         margin: 0px;
