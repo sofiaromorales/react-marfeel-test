@@ -15,6 +15,8 @@ We will check by relevance:
 ● Good use of libraries 
 ```
 
+This is a CRA 
+
 ## Features of the app
 
 - [X] Customizations of the UI from a mocked API
