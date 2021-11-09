@@ -17,37 +17,37 @@
     },
     "articles": [
         {
-            "image": "https://media.gettyimages.com/photos/cat-sandwich-picture-id146582583?s=2048x2048",
-            "title": "Cats are cute",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
+            "image": "https://avatars.githubusercontent.com/u/49292858?v=4",
+            "title": "Hi there! I'm Sofía 👋",
+            "description": "I'm a web developer, a SWE student (soon to graduate), and a open source advocate. Besides coding I like to play the guitar and learn about software patterns."
         },
         {
 
-            "title": "Cats are cute",
+            "title": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
         },
         {
             "image": "https://media.gettyimages.com/photos/tabby-cat-selfie-picture-id1151094724?s=2048x2048",
-            "title": "Cats are cute",
+            "title": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
         },
         {
-            "title": "Cats are cute",
+            "title": "Lorem ipsum dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
+        },
+        {
+            "image": "https://media.gettyimages.com/photos/scottish-fold-playing-picture-id1127317526?s=2048x2048",
+            "title": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
         },
         {
             "image": "https://media.gettyimages.com/photos/cat-sandwich-picture-id146582583?s=2048x2048",
-            "title": "Cats are cute",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
-        },
-        {
-            "image": "https://media.gettyimages.com/photos/cat-sandwich-picture-id146582583?s=2048x2048",
-            "title": "Cats are cute",
+            "title": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
         },
         {
             "image": "https://media.gettyimages.com/photos/cute-american-shorthair-cat-resting-on-a-sofa-picture-id1184912409?s=2048x2048",
-            "title": "Cats are cute",
+            "title": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
         }
     ],
