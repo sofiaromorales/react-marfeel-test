@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import Article from './Article'
+import { API_PORT } from '../constants'
 
 const Articles = (props) => {
 
@@ -8,7 +9,7 @@ const Articles = (props) => {
 
     const fetchSections = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/mocks/articles')
+            const response = await fetch(`http://localhost:${API_PORT}/api/mocks/articles`)
             setArticles(await response.json())
         } catch(error) {
             console.log('Error: ' + error)

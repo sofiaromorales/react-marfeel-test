@@ -6,6 +6,8 @@ import HeaderMenu from './HeaderMenu'
 import NavigationMenu from './NavigationMenu'
 import SectionMenu from './SectionMenu'
 
+import { API_PORT } from '../constants'
+
 const Header = (props) => {
 
     const [customizations, setCustomizations] = useState({})
@@ -23,7 +25,7 @@ const Header = (props) => {
 
     const fetchCustomizations = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/mocks/header')
+            const response = await fetch(`http://localhost:${API_PORT}/api/mocks/header`)
             setCustomizations(await response.json())
         } catch (error) {
             console.log('Error: ' + error)
@@ -32,7 +34,7 @@ const Header = (props) => {
 
     const fetchSections = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/mocks/sections')
+            const response = await fetch(`http://localhost:${API_PORT}/api/mocks/sections`)
             setSections(await response.json())
         } catch (error) {
             console.log('Error: ' + error)

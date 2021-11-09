@@ -41,7 +41,15 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
         },
         {
+            "title": "Lorem ipsum dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
+        },
+        {
             "image": "https://media.gettyimages.com/photos/cat-sandwich-picture-id146582583?s=2048x2048",
+            "title": "Lorem ipsum dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
+        },
+        {
             "title": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
         },

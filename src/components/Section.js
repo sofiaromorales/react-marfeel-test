@@ -4,8 +4,7 @@ const Section = (props) => {
     const {
         testId,
         sectionMenu = {},
-        sectionTitle,
-        selectedSection = false
+        sectionTitle
     } = props
     return (
         <div

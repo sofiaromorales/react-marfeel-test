@@ -10,12 +10,3 @@ $flex-sizes: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 $margins: (0, 5, 10, 15, 20, 30, 40, 50);
 $percentages: (0, 5, 15, 20, 25, 50, 75, 100);
 $sides: ('top', 'bottom', 'right', 'left');
-
-
-:export {
-    xs: $xs;
-    sm: $sm;
-    md: $md;
-    lg: $lg;
-    xl: $xl;
-}

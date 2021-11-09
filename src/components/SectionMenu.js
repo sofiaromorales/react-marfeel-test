@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import Section from './Section'
+import { API_PORT } from '../constants'
 
 const SectionMenu = (props) => {
     const {
@@ -19,7 +20,7 @@ const SectionMenu = (props) => {
 
     const fetchSections = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/mocks/sections')
+            const response = await fetch(`http://localhost:${API_PORT}/api/mocks/sections`)
             setSections(await response.json())
         } catch (error) {
             console.log('Error: ' + error)

@@ -6,7 +6,6 @@
     z-index: 100;
     max-height: 200px;
     height: 100%;
-
     .menu {
         height: $medium;
         max-height: 100px;
@@ -17,7 +16,6 @@
     .menu-hidden {
         max-height: 0px;
     }
-
 }
 
 @media screen and (min-width: $sm) {

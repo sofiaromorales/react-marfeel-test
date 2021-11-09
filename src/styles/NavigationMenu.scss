@@ -1,5 +1,4 @@
 .NavigationMenu {
-
     height: 100%;
     width: 0;
     position: fixed;
@@ -10,11 +9,9 @@
     transition: .5s;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     overflow: hidden;
-
     &.opened {
         width: 300px;
     }
-
     .banner {
         background: $dark-blue;
         height: 70px;
@@ -26,17 +23,17 @@
             margin: auto 0;
         }
     }
-
     .divider {
         background: $light-grey;
         height: 1px;
         width: 100%;
     }
-
 }
 
 @media screen and (min-width: $sm) {
     .NavigationMenu {
-
+        &.opened {
+            width: 400px;
+        }
     }
 }
