@@ -1,20 +1,4 @@
 {
-    "header": {
-        "background": {
-            "colour": "white"
-        },
-        "logo": {
-            "size": 150,
-            "image": "https://assets.website-files.com/60e82bee0900620f66d6c9dc/616bc3e9f02ccd810a73f7a6_logo-marfeel.svg"
-        },
-        "burgerMenu": {
-            "colour": "green"
-        },
-        "sectionMenu": {
-            "colour": "green",
-            "textSize": 15
-        }
-    },
     "articles": [
         {
             "image": "https://media.gettyimages.com/photos/cat-sandwich-picture-id146582583?s=2048x2048",
@@ -50,26 +34,5 @@
             "title": "Cats are cute",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor maximus convallis. Nullam pellentesque facilisis odio eget laoreet. Nulla luctus ultricies aliquet.  Duis eget finibus justo. Donec tristique euismod purus a imperdiet. Vestibulum arcu turpis, dignissim"
         }
-    ],
-    "sections": [
-        {
-            "title": "Section 1"
-        },
-        {
-            "title": "Section 2"
-        },
-        {
-            "title": "Section 3"
-        },
-        {
-            "title": "Section 4"
-        },
-        {
-            "title": "Section 5"
-        },
-        {
-            "title": "Section 6"
-        }
     ]
-
 }

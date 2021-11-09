@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import useFetch from 'react-fetch-hook'
 
 import BlackOverlay from './BlackOverlay'
 import FloatingHamburgerMenu from './FloatingHamburgerMenu'
@@ -22,29 +21,28 @@ const Header = (props) => {
         sectionMenu = {}
     } = customizations
 
-    const {
-        data: sectionsData
-    } = useFetch('http://localhost:3001/api/mocks/sections')
+    const fetchCustomizations = async () => {
+        try {
+            const response = await fetch('http://localhost:3001/api/mocks/header')
+            setCustomizations(await response.json())
+        } catch (error) {
+            console.log('Error: ' + error)
+        }
+    }
 
-    const {
-        data
-    } = useFetch('http://localhost:3001/api/mocks/header')
-
+    const fetchSections = async () => {
+        try {
+            const response = await fetch('http://localhost:3001/api/mocks/sections')
+            setSections(await response.json())
+        } catch (error) {
+            console.log('Error: ' + error)
+        }
+    }
     useEffect(() => {
-         window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
+        fetchCustomizations()
+        fetchSections()
     }, [])
-
-    useEffect(() => {
-        if (data) {
-            setCustomizations(data)
-        }
-    }, [data])
-
-    useEffect(() => {
-        if (sectionsData) {
-            setSections(sectionsData)
-        }
-    }, [sectionsData])
 
     const handleScroll = () => {
         if (window.scrollY < 300) {
@@ -85,6 +83,7 @@ const Header = (props) => {
             <div
                 className='Header'
                 style={{background: background.colour}}
+                data-testid='test-header'
             >
                 <HeaderMenu
                     burgerMenu={burgerMenu}

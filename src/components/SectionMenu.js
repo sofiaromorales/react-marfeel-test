@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import useFetch from 'react-fetch-hook'
 
 import Section from './Section'
 
 const SectionMenu = (props) => {
     const {
-        hide,
         sectionMenu = {}
     } = props
 
@@ -19,20 +17,17 @@ const SectionMenu = (props) => {
         setSelectedSection(sectionIndex)
     }
 
-    const {
-        data,
-        error
-    } = useFetch('http://localhost:3001/api/mocks/sections')
-
-    if (error) {
-        console.log(error);
-    }
-
-    useEffect(() => {
-        if (data) {
-            setSections(data)
+    const fetchSections = async () => {
+        try {
+            const response = await fetch('http://localhost:3001/api/mocks/sections')
+            setSections(await response.json())
+        } catch (error) {
+            console.log('Error: ' + error)
         }
-    }, [data])
+    }
+    useEffect(() => {
+        fetchSections()
+    }, [])
 
     const renderSections = () => {
         return sections.map((s, i) => {
@@ -40,13 +35,17 @@ const SectionMenu = (props) => {
                 <div
                     className='section-container col-1 mt-auto'
                     onClick={() => changeSection({sectionIndex: i})}
+                    data-testid='test-sectionMenu'
+                    key={i}
                 >
                     <Section
                         sectionTitle={s.title}
                         sectionMenu={sectionMenu}
+                        testId={`test-sectionMenu-${i}`}
                     />
                     <div
                         className={`w-100 section ${i === selectedSection ? 'selected' : ''}`}
+                        data-testid={i === selectedSection ? 'test-selected' : ''}
                         style={{background: i === selectedSection ? sectionMenu.colour : ''}}
                     >
                     </div>
@@ -55,7 +54,6 @@ const SectionMenu = (props) => {
         })
 
     }
-
 
     return (
         <div className='SectionMenu h-100'>

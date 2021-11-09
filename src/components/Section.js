@@ -2,13 +2,20 @@ import React from 'react'
 
 const Section = (props) => {
     const {
-        sectionMenu = {sectionMenu},
+        testId,
+        sectionMenu = {},
         sectionTitle,
         selectedSection = false
     } = props
     return (
-        <div className='Section'>
-            <div className='row mb-5'>
+        <div
+            className='Section'
+            data-testid='test-section'
+        >
+            <div
+                className='row mb-5'
+                data-testid={testId}
+            >
                 <p
                     className='m-auto'
                     style={{fontSize: sectionMenu.textSize}}

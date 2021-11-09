@@ -27,6 +27,7 @@ const HeaderMenu = (props) => {
                         alt='marfeel-logo'
                         className='block m-auto'
                         style={{width: logo.size}}
+                        data-testid='test-hader-menu-logo'
                     />
                 </div>
             </div>

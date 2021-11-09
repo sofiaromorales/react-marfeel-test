@@ -7,7 +7,10 @@ const HamburgerMenuIcon = (props) => {
     } = props
 
     return (
-        <div className='HamburgerMenuIcon'>
+        <div
+            className='HamburgerMenuIcon'
+            data-testid='test-hamburger-menu-icon'
+        >
             <div
                 className='bar row m-5'
                 style={{background: burgerMenu.colour}}

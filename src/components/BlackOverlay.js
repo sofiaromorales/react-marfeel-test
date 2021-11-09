@@ -8,10 +8,6 @@ const BlackOverlay = (props) => {
         opened
     } = props
 
-
-    console.log('opened');
-    console.log(opened);
-
     return (
         <div
             className={`BlackOverlay ${opened ? 'opened' : ''}`}

@@ -12,7 +12,7 @@ const Article = (props) => {
         <div className='Article row mt-50'>
             {image &&
                 <div className='col-6 image-container pr-20'>
-                    <div className='image' style={{backgroundImage: 'url(https://media.gettyimages.com/photos/cat-sandwich-picture-id146582583?s=2048x2048)'}} />
+                    <div className='image' style={{backgroundImage: `url(${image})`}} />
                 </div>
             }
             <div className='col-6 pl-20'>
